@@ -157,7 +157,10 @@
       ],
       "execution_count": 11,
       "metadata": {
-        "tags": []
+        "tags": [],
+        "gather": {
+          "logged": 1651450796108
+        }
       },
       "id": "3726d7c8-6c0b-4174-9ea4-6656198be4ea"
     },
@@ -876,7 +879,7 @@
     },
     "language_info": {
       "name": "python",
-      "version": "3.6.9",
+      "version": "3.9.7",
       "mimetype": "text/x-python",
       "codemirror_mode": {
         "name": "ipython",
