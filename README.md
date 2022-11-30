@@ -1,4 +1,4 @@
-# Drone waterbird counting 
+# Drone based waterbird counting 
 
 This project is a proof-of-concept tool to automatically count colonially nesting waterbirds from drone imagery, developed initialy on Straw-necked Ibis at Narran Lakes.
 
