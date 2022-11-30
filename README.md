@@ -21,9 +21,9 @@ We have been running this project on a NC4AS_T4_V3 in AzureML, to download this 
 NOTE: Git lfs is used for the larger files https://git-lfs.github.com/
 
 ```bash
-git clone https://github.com/MDBAuth/bird-counting.git
+git clone https://github.com/MDBAuth/Drone-based-waterbird-counting.git
 
-cd bird-counting
+cd Drone-based-waterbird-counting.
 create environment:
 
 conda create -n waterbirds python=3.9 
