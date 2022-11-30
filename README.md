@@ -14,7 +14,7 @@ This project contains 3 requirements files:
 |--|--|--|
 |requirements.txt|pip| minimal requirment to run the model and label datasets|
 |Env.txt| Conda | the python 3.9 enviroment we are runing this project on
-|Envrequirements.txt| pip | the packages we have installed on on our enviroment|
+|Envrequirements.txt| pip | the packages we have installed on our enviroment|
 
 We have been running this project on a NC4AS_T4_V3 in AzureML, to download this project and set up this enviroment run the following in a terminal
 
