@@ -91,7 +91,8 @@ Once a **Dataset** is prepared, including a single PNT file, and the ```params.y
 
 <center>	
 ```python3 ./scripts/split_raw_dataset.py```	
-</center>	
+</center>
+    
 ### 2.5. _Labelling Data using Label Studio_	
 Following the preparation of a dataset for labelling, follow the instructions below to begin labelling data using Label Studio [(a commercially available third party product)](https://labelstud.io/guide/).	
 **NOTES**:	
@@ -108,13 +109,15 @@ Following the preparation of a dataset for labelling, follow the instructions be
 8. Click on Labeling Setup and Remove Airplane and Car labels and add Bird (and/or other labels as required)	
 9. Click Save and begin labelling ([click here](https://blog.superannotate.com/introduction-to-bounding-box-annotation-best-practices/) for labelling best practices)	
 10. Once finished labelling, Click Export and select JSON format	
-11. Click Export and save the output file into ```./data/labels/``` directory. Update the relevant filename or filepath in ```params.yaml``` (located in ```slices:labels```)	
+11. Click Export and save the output file into ```./data/labels/``` directory. Update the relevant filename or filepath in ```params.yaml``` (located in ```slices:labels```)
+    
 ### 2.6. _Prepare Training Set from Labelled Data_	
 Once the steps in Section 2.5 have been followed to completion, first update the following fields in the __training__ section of ```params.yaml``` as follows:	
 - ```train_data_dir```: ```./data/training-sets/project_name/data```	
 - ```train_coco```: ```./data/training-sets/project_name/labels.json```	
 Finally, run the following command to prepare the **Training Set**:	
 <center>```python3 scripts/prepare_training_set.py```</center>	
+    
 ### 2.7. _Adding to an Existing Training Set_	
 If all of the previous steps were followed for two projects (let's call them ```project_1``` and ```project_2```), then there should be two different ```labels.json``` files each in their respective folders, as well as two corresponding ```training-sets/project_name/data/`` directories containing the image (slices) data inputs. The following methodology can be used to combine these two **Training Set** (this process can be used to combine any number of **Training Sets**):	
 1. Create a new folder called ```./data/training-sets/combined_project_name/data/```	
@@ -122,6 +125,7 @@ If all of the previous steps were followed for two projects (let's call them ```
 3. Create an empty JSON file ```./data/training-sets/combined_project_name/labels.json```	
 4. Concatenate the two JSON files from ```project_1``` and ```project_2``` and copy the output into the JSON file created in Step 3	
 5. Update the relevant fields in ```params.yaml``` (see Section 2.6)	
+    
 ## 3. Training a Model on a Training Set	
 Once a **Training Set** has been prepared according to the steps described in Section 2, first update the _project_name_ of the following field in the __models__ section of ```params.yaml```:	
 - ```best_model```: ```./models/detection/weights/project_name.pth```	
