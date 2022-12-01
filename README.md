@@ -138,5 +138,4 @@ python3 scripts/bird_count.py
 * WARNING: The <b>--save-slices</b> parameter if set to True can easily consume a large amount of storage so it is advised to create a small test folder containing 1 or only very few whole images for testing and calibration purposes. 
 
 
-## Supported through funding from the Australian Government Murray–Darling Water and Environment 
-Research Program
+## Supported through funding from the Australian Government Murray–Darling Water and Environment Research Program
