@@ -136,3 +136,7 @@ python3 scripts/bird_count.py
 * <b>--model-path:</b> This is the path where the inferencing model is located (default: ./models/detection/weights/best.pth).
 * <b>--save-slices:</b> This optional parameter enables saving visual predictions of non-empty slices (default: 0). Set to '1' to enable. 
 * WARNING: The <b>--save-slices</b> parameter if set to True can easily consume a large amount of storage so it is advised to create a small test folder containing 1 or only very few whole images for testing and calibration purposes. 
+
+
+## Supported through funding from the Australian Government Murray–Darling Water and Environment 
+Research Program
