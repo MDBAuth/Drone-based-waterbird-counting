@@ -42,10 +42,8 @@ export PYTHONPATH=$PWD
 with the enviroment setup we can run the quickstart notebook in the notebook folder to see the tool in action. Further details about the tool and its development can be see in the report folder.
 
 
-# <center>Instruction Guide<center>	version https://git-lfs.github.com/spec/v1
 
-oid sha256:70632fe0926b4b48c5b875286c2c53e94c962f2e18e0d5851bc6ef4c51d14724
-## <center>Annotating and training an object detector for automated counting of species<center>	size 9588
+# <center>Annotating and training an object detector for automated counting of species<center>	
 
 ##### <center>IMPORTANT NOTE: Parameters in ***params.yaml*** are used throughout the repository.<center>	
 
