@@ -21,6 +21,8 @@ We have been running this project on a NC4AS_T4_V3 in AzureML, to download this 
 NOTE: Git lfs is used for the larger files https://git-lfs.github.com/
 
 ```bash
+sudo apt-get install git-lfs
+
 git clone https://github.com/MDBAuth/Drone-based-waterbird-counting.git
 
 cd Drone-based-waterbird-counting.
