@@ -25,9 +25,10 @@ sudo apt-get install git-lfs
 
 git clone https://github.com/MDBAuth/Drone-based-waterbird-counting.git
 
-cd Drone-based-waterbird-counting.
+cd Drone-based-waterbird-counting
+```
 create environment:
-
+```bash
 conda create -n waterbirds python=3.9 
 
 conda activate waterbirds 
