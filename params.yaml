@@ -1,3 +1,45 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:87d593eef3b0721f32a9883a2a755c9acd5c057ee5d38426cb9b3091e03e1847
-size 1201
+data:
+  image_height: 5460
+  image_width: 8192
+  holdouts_ratio: 0.15
+  project_name: DJI_202109281012_017_Mid_Lake_1010_70m_D2_50mm_10-lap
+  raw_dir: ./data/raw
+  trainval_dir: ./data/trainval
+  holdouts_dir: ./data/holdouts
+  nolabels_dir: ./data/nolabels
+  points_file: Points_25Nov_01_FINAL.pnt
+  ground_truth_counts: ./data/per_image_count.csv
+slices:
+  height: 546
+  width: 512
+  trainval_dir: ./data/slices-trainval
+  holdouts_dir: ./data/slices-holdouts
+  nolabels_dir: ./data/slices-nolabels
+  labels: ./data/labels/label-studio-labels.json
+training:
+  num_epochs: 30
+  early_stopping_patience: 5
+  train_data_dir: ./data/coco-detection-dataset/data
+  train_coco: ./data/coco-detection-dataset/labels.json
+  val_ratio: 0.2
+  train_batch_size: 8
+  valid_batch_size: 4
+  train_shuffle_dl: true
+  valid_shuffle_dl: false
+  num_workers_dl: 4
+  num_classes: 2
+  momentum: 0.9
+  learning_rate: 0.001
+  weight_decay: 0.0005
+models:
+  best_model: ./models/detection/weights/best.pth
+  weights_dir: ./models/detection/weights
+evaluation:
+  results_dir: ./models/results/
+  conf_thresh: 0.95
+inference:
+  results_dir: ./inference/results/
+  conf_thresh: 0.95
+  overlap: 0.1
+  sidelap: 0.1
+  stride: 0.5

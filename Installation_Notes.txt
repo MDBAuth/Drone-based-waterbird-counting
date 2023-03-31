@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4ad3eb87c6b13222ca808079bda8f49e2d618a1dbc11f4e91f4975cc1a0fa3a0
-size 352
+cd ./Drone-based-waterbird-counting
+
+conda create -n waterbirds python=3.9 
+
+conda activate waterbirds 
+
+conda install --file ./requirements/Env.txt
+
+pip3 install -r ./requirements/Envrequirements.txt
+
+pip3 install -r ./requirements/requirements.txt
+
+export PYTHONPATH=$PWD
+
+pip3 install ipykernel 
+
+python -m ipykernel install --user --name=waterbirds
