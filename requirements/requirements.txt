@@ -6,5 +6,5 @@ pycocotools==2.0.4
 opencv-python==4.5.5.62
 opencv_contrib_python==4.5.5.62
 --find-links https://download.pytorch.org/whl/torch_stable.html
-torch==1.10.2+cu102
+torch==1.13.1
 torchvision==0.11.3+cu102
