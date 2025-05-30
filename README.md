@@ -6,7 +6,7 @@ The purpose of developing a tool to automatically count colonially nesting water
 repeatable and timely monitoring of large colonies. It is envisioned that a user would be able to input drone
 imagery and with minimal technical skill derive an accurate count of waterbirds.
 
-[Report](https://www.mdba.gov.au/sites/default/files/publications/nesting-waterbird-colony-population-size-monitoring-using-automated-counts-on-drone-imagery.pdf)
+You can read the report [here](https://www.mdba.gov.au/sites/default/files/publications/nesting-waterbird-colony-population-size-monitoring-using-automated-counts-on-drone-imagery.pdf)
 
 ## Quickstart instructions  
 
